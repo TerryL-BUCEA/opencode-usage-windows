@@ -2,7 +2,10 @@
 
 opencode 用量与计费透明化工具：token 报表、缓存命中率、TPS、上下文占比、费用估算，外加独立窗口实时仪表盘。**主打简洁省事**：零依赖、零配置、装完即用，一个窗口看清用量/命中率/费用。只读本地数据，零 token 开销。
 
-> 仓库名带 `-windows` 是因为仪表盘启动器和置顶等能力以 Windows 为主（实际已做跨平台降级，报表在 Linux/macOS 也可用）。skill 目录名保持 `opencode-usage`。
+> 名称带 `-windows`：仪表盘的启动器（`.bat`）、窗口置顶、按 `q` 退出等能力以 Windows
+> 为主，且在 Windows 上开发与验证。脚本含跨平台降级（其他平台清屏用 `clear`、退出用
+> Ctrl+C），但 **Linux/macOS 未做兼容性实测**，报表功能同理；欢迎实测反馈。skill 目录名
+> 保持 `opencode-usage`。
 
 ![仪表盘示例](docs/screenshot.png)
 
@@ -117,4 +120,6 @@ opencode-usage-windows/               ← 仓库（zip 内同名顶层目录）
     └── watch.md                   ← /watch 入口
 ```
 
-LICENSE 自定。
+## License
+
+MIT
