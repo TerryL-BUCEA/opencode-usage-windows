@@ -1,0 +1,10 @@
+{
+  "_doc": "单价单位：百万 token，币种由 _currency 指定（内置表以人民币为例；换其他币种时把条目改为该币种价格并同步改 _currency）。miss=未命中输入, cache_read=缓存读命中, cache_write=缓存写, output=输出(推理 token 并入输出价)。key 为模型 id 前缀，长前缀优先匹配。未收录的模型不计费，界面显示「缺省」。手动条目优先，sync_prices.py 只补缺不覆盖。",
+  "_currency": "¥",
+  "_source": "MiMo 官方定价页「实时推理」价，2026-10-22 查（批量推理价不适用）。v2.6-pro / v2.6-flash / v2.6-pro-ultraspeed 为官方价；v2.5 系列官方无单独报价，按 v2.6 同档价近似，仅供历史数据估算。价格变动时请手工更新本表。",
+  "mimo-v2.6-pro-ultraspeed": {"miss": 30.0, "cache_read": 0.25, "cache_write": 30.0, "output": 60.0},
+  "mimo-v2.6-pro": {"miss": 3.0, "cache_read": 0.025, "cache_write": 3.0, "output": 6.0},
+  "mimo-v2.5-pro": {"miss": 3.0, "cache_read": 0.025, "cache_write": 3.0, "output": 6.0},
+  "mimo-v2.6-flash": {"miss": 1.0, "cache_read": 0.02, "cache_write": 1.0, "output": 2.0},
+  "mimo-v2.5": {"miss": 1.0, "cache_read": 0.02, "cache_write": 1.0, "output": 2.0}
+}
