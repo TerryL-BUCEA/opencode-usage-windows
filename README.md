@@ -7,7 +7,9 @@ opencode 用量与计费透明化工具：token 报表、缓存命中率、TPS�
 > Ctrl+C），但 **Linux/macOS 未做兼容性实测**，报表功能同理；欢迎实测反馈。skill 目录名
 > 保持 `opencode-usage`。
 
-![仪表盘示例](docs/screenshot.png)
+![仪表盘界面](docs/screenshot.png)
+
+![实际使用场景：置顶仪表盘悬浮于 opencode 之上](docs/screenshot_2.png)
 
 ## 动机
 
