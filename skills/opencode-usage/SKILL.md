@@ -11,7 +11,7 @@ description: opencode 用量与计费工具：token 用量报表、缓存命中�
 
 - 报表：`python <skill>/scripts/oc_usage.py [--days N] [--by day|model|session] [--model 子串]`
 - 仪表盘：`python <skill>/scripts/oc_usage.py --watch [--interval 秒] [--session id前缀]`
-  - Windows 用 `<skill>/scripts/usage_watch.bat` 弹独立窗口；按 `q` 或 Ctrl+C 退出
+  - Windows 用 `<skill>/scripts/usage_watch.bat` 弹独立窗口（默认置顶）；按 `q` 或 Ctrl+C 退出
   - 跟随最近活跃会话；`--session` 可钉住
 - `<skill>` = 本 SKILL.md 所在目录。项目安装在 `.opencode/skills/opencode-usage/`，全局安装在 `~/.config/opencode/skills/opencode-usage/`。
 

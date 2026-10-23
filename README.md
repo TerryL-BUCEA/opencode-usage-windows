@@ -41,10 +41,12 @@ command/*.md            →  <你的项目>/.opencode/command/
 
 或直接 `python scripts/oc_usage.py --help`（脚本在 skill 的 scripts/ 下）。
 
-单屏用户可加 `--topmost` 让仪表盘窗口置顶，不遮挡问题立刻消失：
+单屏用户的好消息：启动器 **默认置顶**（footer 显示「置顶」），不遮挡背后的 opencode；不想置顶时绕过启动器直接运行即可：
 
 ```
-usage_watch.bat --topmost          # 或 python scripts/oc_usage.py --watch --topmost
+python scripts/oc_usage.py --watch        # 普通窗口（不置顶）
+usage_watch.bat                           # 默认置顶
+usage_watch.bat --topmost                 # 显式置顶（同默认）
 ```
 
 注意：置顶是**窗口级**属性，无法只置顶单个标签页——如果终端把仪表盘放在多标签的同一个
